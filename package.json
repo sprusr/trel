@@ -1,17 +1,17 @@
 {
-  "name": "trl",
+  "name": "trel",
   "version": "0.0.1",
   "description": "A command line Trello client",
   "main": "index.js",
   "bin": {
-    "trl": "./index.js"
+    "trel": "./index.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sprusr/trl.git"
+    "url": "git+https://github.com/sprusr/trel.git"
   },
   "keywords": [
     "Trello",
@@ -20,9 +20,9 @@
   "author": "sprusr",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/sprusr/trl/issues"
+    "url": "https://github.com/sprusr/trel/issues"
   },
-  "homepage": "https://github.com/sprusr/trl#readme",
+  "homepage": "https://github.com/sprusr/trel#readme",
   "dependencies": {
     "blessed": "^0.1.81"
   }
