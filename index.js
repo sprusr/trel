@@ -1,15 +1,15 @@
 #!/usr/bin/env node
 
-var blessed = require('blessed');
+var nconf = require('nconf');
+var trel = require('./lib/trel.js');
 
-var screen = blessed.screen({
-  smartCSR: true
-});
+nconf.argv().env();
 
-screen.title = 'trel';
+var trelloKey = nconf.get('TRELLO_DEVELOPER_PUBLIC_KEY');
+var trelloToken = nconf.get('TRELLO_MEMBER_TOKEN');
 
-screen.key(['escape', 'q', 'C-c'], function(ch, key) {
-  return process.exit(0);
-});
-
-screen.render();
+if(trelloKey && trelloToken) {
+  trel.init();
+} else {
+  console.log('ERROR! Please define TRELLO_DEVELOPER_PUBLIC_KEY and TRELLO_MEMBER_TOKEN. See documentation for more info.')
+}

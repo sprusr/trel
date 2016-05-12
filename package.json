@@ -21,6 +21,8 @@
   },
   "homepage": "https://github.com/sprusr/trel#readme",
   "dependencies": {
-    "blessed": "^0.1.81"
+    "blessed": "^0.1.81",
+    "nconf": "^0.8.4",
+    "node-trello": "^1.1.2"
   }
 }
