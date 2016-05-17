@@ -1,5 +1,7 @@
 # trel
 
+[![npm version](https://badge.fury.io/js/trel.svg)](https://badge.fury.io/js/trel)
+
 A command line Trello client.
 
 ## Usage
