@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/sprusr/trel#readme",
   "dependencies": {
+    "chalk": "^1.1.3",
     "inquirer": "^1.0.2",
     "nconf": "^0.8.4",
     "node-trello": "^1.1.2"
